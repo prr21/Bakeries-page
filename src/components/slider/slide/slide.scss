@@ -1,0 +1,17 @@
+.slide-img {
+    width: 300px;
+    transition: 0.3s;
+    cursor: pointer;
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+    
+    img {
+        width: 100%;
+    }
+
+    &.hide {
+        display: none;
+    }
+}

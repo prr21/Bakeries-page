@@ -1,0 +1,31 @@
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-nav {
+        width: 40px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 20;
+        transition: .3s;
+        user-select: none;
+
+        &:hover {
+            color: black;
+            background-color: #e7e7e785;
+        }
+
+        &.disable {
+            opacity: 0;
+            cursor: default;
+            
+            span {
+                display: none;
+            }
+        }
+    }
+}
